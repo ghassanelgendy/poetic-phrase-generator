@@ -284,6 +284,8 @@ btn-ghassan {
 .card {
   display: flex;
   padding: 40px;
+  margin-top: 50px;
+  ;
   flex-direction: column;
   max-width: 450px;
   justify-content: center;
