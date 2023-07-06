@@ -14,25 +14,28 @@
 	</head>
 	<body>
 		<div class="container">
-			<div class="card bg-custom-1">
-				<div class="col-12 lg-6 text-center">
-					<input
-						type="text"
-						id="name"
-						name="text"
-						class="input"
-						placeholder="Enter your name"
-						type="text" />
-					<input
-						type="text"
-						id="favorite-activity"
-						class="input"
-						placeholder="Enter your favorite activity" />
-					<input
-						type="text"
-						id="favorite-place"
-						class="input"
-						placeholder="Your favorite place" />
+			<div class="card">
+				<div class="text-wrap">
+					<div class="input-wrapper">
+						<input
+							type="text"
+							id="name"
+							name="text"
+							class="input"
+							placeholder="Enter your name"
+							type="text" />
+						<input
+							type="text"
+							id="favorite-place"
+							class="input"
+							placeholder="Enter your favorite place" />
+
+						<input
+							type="text"
+							id="favorite-activity"
+							class="input"
+							placeholder="Enter your favorite activity" />
+					</div>
 					<div class="btn-wrap">
 						<button id="generate-btn" class="btn-ghassan">
 							<span class="span-mother">
@@ -60,12 +63,14 @@
 				</div>
 			</div>
 			<!-- Generating -->
-			<div class="col-12 col-lg-6 text-center">
-				<img
-					src="./avatar.png"
-					class="img-fluid"
-					width="300px"
-					alt="A headshot of the quote author" />
+			<div class="avatar-wrapper">
+				<div class="img-wrap">
+					<img
+						src="./avatar.png"
+						class="img-fluid"
+						width="300px"
+						alt="A headshot of the quote author" />
+				</div>
 				<div id="loader">
 					<img id="loader-img" src="loading.gif" alt="Loading spinner" />
 					<h3>Fetching phrase &amp; image...</h3>

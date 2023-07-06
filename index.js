@@ -1,17 +1,19 @@
 import { generateTextAndImage } from "./utils.js"
 
-// 1. Change the value of the variable to your name
-let name = "Ghassan Elgendy"
+// Select the user input elements
+const nameInput = document.getElementById("name");
+const activityInput = document.getElementById("favorite-activity");
+const placeInput = document.getElementById("favorite-place");
+const generateBtn = document.getElementById("generate-btn");
 
-// 2. Change the value of the variable to your favorite activity
-let favoriteActivity = "coding, karting"
+// Add event listener to the Generate button
+generateBtn.addEventListener("click", () => {
+  // Retrieve the user input values
+  const name = nameInput.value;
+  const favoriteActivity = activityInput.value;
+  const favoritePlace = placeInput.value;
+  const temperature = 0.9; // Set the desired temperature
 
-// 3. Assign the favoritePlace variable your favorite place
-// I.e. city, mountain, pub, forrest, beach, Manhattan, etc.
-let favoritePlace = "the sea, beach"
-
-// 4. Configure the AI by setting a temperature from 0 to 1
-// The higher temperature, the more random & experimental output
-let temperature = 0.9
-
-generateTextAndImage(name, favoriteActivity, favoritePlace, temperature)
+  // Call the generateTextAndImage function with user input values
+  generateTextAndImage(name, favoriteActivity, favoritePlace, temperature);
+});
