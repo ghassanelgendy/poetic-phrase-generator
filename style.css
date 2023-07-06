@@ -15,6 +15,10 @@
   --text-color: black;
 }
 
+.title-wrap {
+  color: whitesmoke;
+  font-size: 1.9rem;
+}
 
 body {
   box-sizing: border-box;
@@ -281,11 +285,15 @@ btn-ghassan {
   justify-content: center;
 }
 
+.description-txt {
+  color: whitesmoke;
+  margin-top: 0;
+}
+
 .card {
   display: flex;
-  padding: 40px;
+  padding: 20px;
   margin-top: 50px;
-  ;
   flex-direction: column;
   max-width: 450px;
   justify-content: center;
